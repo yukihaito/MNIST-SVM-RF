@@ -1,0 +1,2 @@
+# MNIST-SVM-RF
+基于MNIST的SVM/RF分类测试
