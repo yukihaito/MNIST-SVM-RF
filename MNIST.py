@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
     print('载入训练数据...')
     t = time()
-    data = pd.read_csv('D:\\fashion minist\mnist_train.csv', header=0, dtype=np.int)
+    data = pd.read_csv('D:\输入你的存储目录\mnist_train.csv', header=0, dtype=np.int)
     print('载入完成，耗时%f秒' % (time() - t))
     x, y = data.iloc[:, 1:], data['label']
     x_train, x_valid, y_train, y_valid = train_test_split(x, y, train_size=0.8, random_state=1)
@@ -46,7 +46,7 @@ if __name__ == "__main__":
 
     print('载入测试数据...')
     t = time()
-    data_test = pd.read_csv('D:\\fashion minist\mnist_test.csv', header=0, dtype=np.int)
+    data_test = pd.read_csv('D:\输入你的存储目录\mnist_test.csv', header=0, dtype=np.int)
     print('载入完成，耗时%f秒' % (time() - t))
 
     matplotlib.rcParams['font.sans-serif'] = ['SimHei']
